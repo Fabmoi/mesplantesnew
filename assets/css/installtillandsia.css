@@ -1,0 +1,169 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: ' ';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+                                    /* --------------- FIN RESET CSS --------------- */
+
+a:link {                                                            /* SUPPRESSION SOULIGNEMENTS DES LIENS (BOUTONS) */
+    text-decoration: none;
+}                                
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: url("../img/background/tillandsia.jpg") fixed;
+}
+
+                                    /* --------------- DÉBUT HEADER --------------- */
+header {
+    display: flex;
+}
+.tillandsia-install-desc {                                              /* SECTION CONTENANT TITLE, SUB-TITLE ET SUB-SUB-TITLE */
+    height: min-content;
+    margin: 10px 15px;
+    margin-left: 25%;
+    border: 3px solid rgb(0,0,0);
+    background-color: rgb(65,255,122);
+    text-align: center;
+    line-height: normal;
+}
+.nav-button {                                                           /* BOUTONS DE NAVIGATION SE TROUVANT À DROITE */
+    margin-top: 20px;
+}
+.title-tillandsia-install-desc {                                        /* TITLE HEADER H1 */
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.sub-title-tillandsia-install-desc {                                    /* SUB-TITLE HEADER H2 */
+    font-size: 20px;
+}
+
+.styled-btn-welcome,
+.styled-btn-index,
+.styled-btn-gallery {                                                   /* STYLES BOUTON DE NAVIGATION */
+    margin: 5px 0px 5px 0px;
+    border: 1px solid rgb(0,0,0); 
+    background-color: rgb(0,255,255);
+    background-image: linear-gradient(to right, rgb(0,255,255) 0%, rgb(0, 255, 76) 100%);
+    font-size: 20px;
+    font-weight: bold;
+}            
+.styled-btn-welcome:hover,
+.styled-btn-index:hover,
+.styled-btn-gallery:hover {                                             /* STYLES BOUTON DE NAVIGATION AU SURVOL */
+    background-color: rgb(0,255,255);
+    background-image: linear-gradient(to left, rgb(0,255,255) 0%, rgb(0, 255, 76) 100%);
+} 
+
+
+                                    /* --------------- FIN HEADER --------------- */
+                                    /* --------------- DÉBUT MAIN  --------------- */
+main {                                                                  /* CONTIENT TOUTES LES ÉTAPES (BALISE SECTION) */
+    display: flex;
+    flex-flow: row wrap;
+}
+.tillandsia-install-step {                                              /* BLOC ENGLOBANT CHAQUE SECTION */
+    margin: auto;
+    height: 675px;
+    border: 2px solid black;
+    background-color: rgba(255,255,255,0.3);
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.tillandsia-install-img {                                               /* IMAGE DANS CHAQUE SECTION */
+    width: 400px;
+    margin: auto;
+}
+.tillandsia-install-expl {                                              /* TEXTE DANS CHAQUE SECTION */
+    width: 450px;
+    padding: 10px 5px 0 5px;
+    text-align: center;
+    line-height: normal;
+    font-weight: bold;
+
+}
+                                    /* --------------- FIN MAIN  --------------- */
+                                    /* --------------- DÉBUT FOOTER  --------------- */
+
+footer {                                                                /* SECTION ENGLOBANT LES BOUTONS HAUT DE PAGE ET ACCUEIL DU SITE */
+    text-align: center;
+}
+.styled-btn-top {                                                       /* STYLES BOUTON HAUT DE PAGE */
+    margin: 5px 0 10px 0;
+    background-color: rgb(6,250,6);
+    background-image: linear-gradient(to right, rgb(6,250,6) 0%, rgb(250, 95, 6) 100%);
+    font-size: 20px;
+    font-weight: bold;   
+}
+.styled-btn-top:hover {                                                 /* STYLES BOUTON HAUT DE PAGE AU SURVOL */
+    background-color: rgb(6,250,6);
+    background-image: linear-gradient(to left, rgb(6,250,6) 0%, rgb(250, 95, 6) 100%);
+}
+                                    /* --------------- FIN FOOTER  --------------- */
+                                    /* --------------- DÉBUT RESPONSIVE  --------------- */
+@media screen and (max-width: 946px) {                                  /* RESPONSIVE MAX 1500 PIXELS */
+    .title-tillandsia-install-desc {                                            /* TITLE HEADER */
+        font-size: 30px; 
+    }
+    .sub-title-tillandsia-install-desc {                                        /* SUB-TITLE HEADER */
+        font-size: 17px;
+    }
+    .styled-btn-welcome,
+    .styled-btn-index,
+    .styled-btn-gallery {                                                       /* STYLES BOUTON DE NAVIGATION */
+        font-size: 15px;
+    } 
+}
+@media screen and (max-width: 900px) {
+    .tillandsia-install-desc {
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 480px) {                                  /* RESPONSIVE MAX 480 PIXELS DE LARGE */
+
+    .tillandsia-install-step,
+    .tillandsia-install-expl,
+    .tillandsia-install-img,
+    .responsive-resize {                                                        /* BLOCS DE CHAQUE SECTION */
+      width: 95%;
+      height: 95%;
+    } 
+}

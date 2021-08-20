@@ -1,0 +1,498 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: ' ';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+                                  /* --------------- FIN RESET CSS --------------- */
+
+a:link {                                                            /* SUPPRESSION SOULIGNEMENTS DES LIENS (BOUTONS) */
+  text-decoration: none;
+}                                
+html {
+  background: url("../img/background/welcome.jpg") fixed;
+  font-family: 'Pangolin', serif !important;
+  scroll-behavior: smooth;
+}
+                                  /* --------------- MENU DÉROULANT --------------- */
+                             
+.menu-scroll-fixed {                                                /* CLASS POUR LE STICKY DANS LE JAVASCRIPT */
+  position: fixed;
+  top: 0;
+  left: 15px;
+  text-shadow: 4px 4px 4px rgb(0,0,0);
+  z-index: 2;
+}
+.menu-scroll {                                                      /* MENU DÉROULANT */
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  text-shadow: 4px 4px 4px rgb(0,0,0);
+  z-index: 2;
+  }
+  .menu-scroll, 
+  .menu-scroll ul, 
+  .menu-scroll-fixed ul {                                           /* MENU ET ENFANT ul DU MENU -- CELUI QUI EST VISIBLE ET CHANGE DE MOT AU SURVOL */                                        
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  }
+  .menu-scroll li, 
+  .menu-scroll-fixed li {                                           /* ENFANT li DU MENU -- CELUI QUI EST VISIBLE ET CHANGE DE MOT AU SURVOL */
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  }
+  .menu-scroll li li, 
+  .menu-scroll-fixed li li {                                        /* PETITS-ENFANTS li DU MENU -- CEUX CONTENANT LES NOMS DES CATÉGORIES DE PLANTES SE TROUVANT À GAUCHE */
+  display: inherit;
+  }
+  .menu-scroll a, 
+  .menu-scroll-fixed a {                                            /* ENFANT a DU MENU -- CELUI QUI EST VISIBLE ET CHANGE DE MOT AU SURVOL */
+  display: block;
+  padding: 5px 50px;
+  text-decoration: none;
+  color: rgb(0,0,0);
+  }
+  .menu-scroll ul li a, 
+  .menu-scroll-fixed ul li a {                                      /* ENFANTS a DES ENFANTS li DES ENFANTS ul DU MENU -- CEUX CONTENANT LES NOMS DES CATÉGORIES DE PLANTES SE TROUVANT À GAUCHE */
+  padding: 5px 8px;
+  }
+  .menu-scroll ul, 
+  .menu-scroll-fixed ul {                                           /* ENFANT ul DU MENU -- CELUI QUI EST VISIBLE ET CHANGE DE MOT AU SURVOL */
+  position: absolute;
+  z-index: 1000;
+  min-width: 100%;
+  white-space: nowrap;
+  text-align: left;
+  }
+  .menu-scroll ul ul, 
+  .menu-scroll-fixed ul ul {                                        /* ENFANTS ul DES ENFANTS ul DU MENU -- CEUX S'OUVRANT SUR LA DROITE */
+  left: 100%;
+  top: 0;
+  overflow: hidden;
+  max-width: 0;
+  min-width: 0;
+  transition: 1s all;
+  }
+  .menu-scroll ul li:hover ul, 
+  .menu-scroll-fixed ul li:hover ul {                               /* ENFANTS ul DES ENFANTS li (AU SURVOL) DES ENFANTS ul DU MENU -- CEUX S'OUVRANT SUR LA DROITE */
+  max-width: 350px;
+  }
+  .menu-scroll ul li, 
+  .menu-scroll-fixed ul li {                                        /* ENFANTS li DES ENFANTS ul DU MENU -- CEUX S'OUVRANT SUR LA GAUCHE */
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s;
+  }
+  .menu-scroll li li li, 
+  .menu-scroll-fixed li li li {                                     /* ENFANTS li DES ENFANTS li DES ENFANTS li DU MENU -- CEUX S'OUVRANT SUR LA DROITE */
+  max-height: inherit;
+  }
+  .menu-scroll li:hover li, 
+  .menu-scroll-fixed li:hover li {                                  /* ENFANTS li DES ENFANTS li (AU SURVOL) DU MENU -- TOUT CEUX S'OUVRANT AU DÉROULEMENT DU MENU */
+  max-height: 35px;
+  overflow: visible;
+  }
+  .menu-green{                                                      /* COULEUR DU MENU -- CELUI QUI EST VISIBLE ET CHANGE DE MOT AU SURVOL */                                                       
+  background-color: rgb(207,255,106);
+  background-image: linear-gradient(to bottom, rgb(207,255,106) 0%, rgb(103,127,53) 100%);
+  }
+  .menu-green li {                                                  /* COULEUR DE TOUS CEUX S'OUVRANT À GAUCHE ET À DROITE */
+  background-color:rgb(103,127,53);
+  background-image: linear-gradient(to bottom, rgb(207,255,106) 0%, rgb(103,127,53) 100%);
+  }
+  .menu-green li:hover {                                            /* COULEUR DE TOUS AUX SURVOL */
+  background: rgb(207,255,106);
+  }
+  .menu-scroll li:hover a, 
+  .menu-scroll li li:hover a, 
+  .menu-scroll-fixed li:hover a, 
+  .menu-scroll-fixed li li:hover a {                                /* COULEUR ET BORDURE DE TOUTES LES CASES DU MENU AU SURVOL */
+  border: 1px dotted rgb(0,0,0);
+  color :rgb(0,0,0);
+  }                                    
+                                  /* --------------- FIN DU MENU DÉROULANT --------------- */
+        
+                                  /* --------------- DÉBUT HEADER --------------- */
+
+header {                                                              /* TITRE, SOUS-TITRE, BOUTONS NAVIGATION */
+  width: auto;
+  height: auto;
+  margin: auto;                                                        
+  color: rgb(0,0,0); 
+  text-align: center; 
+  line-height: normal;
+  display: flex;
+  text-shadow: 5px 5px 5px rgb(0,0,0);
+  }
+        .site-desc {                                                            /* SECTION CONTENANT TITLE, SUB-TITLE ET SUB-SUB-TITLE */
+          width: 45%;
+          height: min-content;
+          margin-top: 10px;
+          margin-left: 25%;
+          text-align: center;
+          border: 3px solid rgb(0,0,0);  
+          background-color: rgb(65,255,122);
+        }
+        .title {                                                                /* TITLE HEADER H1 */
+          margin-bottom: 10px;
+          font-size: 50px; 
+          text-shadow: 7px 7px 7px 7px rgb(0,0,0);
+        }
+        .sub-title {                                                            /* SUB-TITLE HEADER H2 */
+          font-size: 25px;
+        }
+        .sub-sub-title {                                                        /* SUB-SUB-TITLE HEADER H2 */
+          font-size: 25px;
+          margin: 10px 0 10px 0
+        }
+                                                      /* --------------- BOUTONS DE NAVIGATION (DANS HEADER) -------------------- */
+        .all-btn-header {                                                       /* FOOTER DU HEADER */
+          width: 25%;
+          margin: auto;
+        }
+        .btn-nav-header {                                                       /* STYLES DES BOUTONS DE NAVIGATION */
+          margin: 5px 0px 5px 0px;
+          border: 1px solid rgb(0,0,0); 
+          background-color: rgb(0,255,255);
+          background-image: linear-gradient(to right, rgb(0,255,255) 0%, rgb(0, 255, 76) 100%);
+          font-size: 18px;
+        }
+        .btn-nav-header:hover {                                                 /* STYLES DES BOUTONS DE NAVIGATION AU SURVOL */
+          background-color: rgb(55, 0, 255);
+          background-image: linear-gradient(to left, rgb(0,255,255) 0%, rgb(0, 255, 76) 100%);
+        }
+                                                      /* --------------- FIN BOUTONS DE NAVIGATION (DANS HEADER) -------------------- */
+                                                      
+                                                      /* --------------- BOUTONS BOÎTES MODALES (DANS HEADER) --------------- */
+                
+                *:focus {                                                             /* OMBRES DES BOÎTES AU FOCUS */
+                  box-shadow: 0 0 10px rgb(0, 0, 255);
+                }
+                .modal-window {                                                       /* SECTIONS CONTENANT LES BOUTONS DE FENÊTRES MODALES */
+                  margin: 15px;
+                }
+                .modal-btn {                                                          /* STYLES BOUTONS FENÊTRES MODALES */
+                  margin: 5px 0px 5px 0px;
+                  border: 1px solid rgb(0,0,0); 
+                  background-color: rgb(187,255,0);
+                  background-image: linear-gradient(to right, rgb(255,81,0) 0%, rgb(187,255,0) 100%);
+                  font-size: 18px;
+                  font-family: 'Akaya+Telivigala' !important;
+                }
+                .modal-btn:hover {                                                    /* BOUTONS FENÊTRES MODALES AU SURVOL */
+                  background-color: rgb(255, 81, 0);
+                  background-image: linear-gradient(to left, rgb(255,81,0) 0%, rgb(187,255,0) 100%);
+                }
+                .modal-update-title, 
+                .modal-soon-title,
+                .modal-author-title {                                                 /* TITRES FENÊTRES MODALES SE TROUVANT DANS LE modal.html */
+                  margin: 10px;
+                  border-radius: 15%;
+                  border: 3px solid rgb(237,0,0);
+                  background-color: rgb(173,255,251);
+                  font-size: 20px;
+                  font-weight: bold;
+                  text-align: center;
+                }
+                .modal-update-left {                                                  /* CONTENU SOUS LE TITRE DE LA FENÊTRE MODALE UPDATE SE TROUVANT DANS LE modal.html */
+                  text-align: left;
+                }
+                .modal-date-flex, 
+                .modal-desc-flex {                                                    /* DATE ET DESCRIPTION DE LA FENÊTRE MODALE UPDATE SE TROUVANT DANS LE modal.html */
+                  display: flex;
+                }
+                .modal-date-flex {                                                    /* DATE DE LA FENÊTRE MODALE UPDATE SE TROUVANT DANS LE modal.html */
+                  font-weight: bold;
+                }
+                strong {
+                  font-weight: bold;
+                }
+                                                      /* --------------- PROCESSUS CHANGEMENT IMAGE AU SURVOL CURSEUR --------------- */
+
+                .modal-click-change-img {                                             /* CLASS ENGLOBANT TOUT LE PROCESSUS DE CHANGEMENT */
+                  position: relative;
+                }
+                .modal-author-img-click-moi, 
+                .modal-author-img-click-joye {                                        /* MOTS CHANGEANT AVEC CURSEUR */
+                  position: absolute;
+                  top: 0; 
+                  right: 0; 
+                  bottom: 0; 
+                  left: 0
+                }
+                .modal-author-img-click-moi {                                         /* IMG QUAND CURSEUR DEDANS */ 
+                  z-index: 0;
+                }
+                .modal-author-img-click-joye {                                        /* MOT QUAND CURSEUR EN-DEHORS */
+                  z-index: 0;
+                }
+                .modal-author-img-click-moi,
+                .modal-click-change-img:hover 
+                .modal-author-img-click-joye {                                        /* OPACITÉ QUAND CURSEUR DEDANS */
+                  opacity: 1;
+                }
+                .modal-author-img-click-joye,
+                .modal-click-change-img:hover 
+                .modal-author-img-click-moi {                                         /* OPACITÉ MOT QUAND CURSEUR EN-DEHORS */
+                  opacity: 0;
+                }
+                .modal-facebook-img {                                                 /* ICÔNE FACEBOOK DONNANT VERS LE PROFIL FACEBOOK DE L'AUTEUR SE TROUVANT DANS LE modal.html */
+                  max-width: 50px;
+                  max-height: 50px;
+                  margin-left: 100px;
+                }
+                .link-youtube {                                                       /* LIENS VERS MA CHAÎNE YOUTUBE DANS MODAL-UPDATE */
+                  font-weight: bold;
+                }
+                                                      /* --------------- FIN PROCESSUS CHANGEMENT IMAGE AU SURVOL CURSEUR --------------- */
+                                                      
+                .modal{                                                               /* FENÊTRE MODALE UPDATE SE TROUVANT DANS LE modal.html */
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background: rgba(0,0,0,0.8) ;
+                  align-items: center;
+                  justify-content: center;
+                  position: fixed;
+                  display: flex;
+                  animation: fadeIn .3s both;
+                  z-index: 3;
+                }
+                .modal-wrapper {                                                      /* CONTENU DE LA FENÊTRE MODALE UPDATE SE TROUVANT DANS LE modal.html */
+                  width: 800px;
+                  padding: 28px;          
+                  max-width: calc(100vw - 20px);
+                  max-height: calc(100vh - 100px);
+                  border-radius: 10px;
+                  background: linear-gradient(rgb(46,219,232), rgb(0,197,76));
+                  overflow: auto;
+                  animation: slideFromTop .3s both;
+                }
+                .modal-hr {                                                           /* LIGNE DE SÉPARATION DANS LES FENÊTRES MODALES */
+                  margin-top: 80px;
+                }
+                .modal[aria-hidden="true"] {                                          /* FENÊTRE MODALE UPDATE SE TTROUVANT DANS LE modal.html */
+                  animation-name: fadeOut;
+                }
+                .modal[aria-hidden="true"] .modal-wrapper {                           /* CONTENU DE LA FENÊTRE MODALE UPDATE SE TROUVANT DANS LE modal.html */
+                  animation-name: slideToBottom;
+                }
+                @keyframes fadeIn {
+                  from {opacity: 0;}
+                 to {opacity: 1;}
+                }
+                @keyframes fadeOut {
+                  from {opacity: 1;}
+                  to {opacity: 0;}
+                }
+                @keyframes slideFromTop {
+                  from {transform: translateY(-50px);}
+                  to {transform: translateY(0px);}
+                }
+                @keyframes slideToBottom {
+                  from {transform: translateY(0px);}
+                  to {transform: translateY(50px);}
+                }
+                                                      /* --------------- FIN BOUTONS BOÎTES MODALES (DANS HEADER) --------------- */ 
+                                  
+                                  /* --------------- FIN HEADER --------------- */
+
+hr {                                                                  /* LIGNES DE SÉPARATION ENTRE HEADER ET MAIN ET MAIN ET FOOTER */
+  height: 5px;
+  border: none;
+  border: double rgb(0,0,0);
+  text-align: center;
+}
+                                  /* --------------- DÉBUT MAIN  --------------- */
+
+main {                                                                /* CONTIENT TOUTES LES CATÉGORIES DE PLANTES (BALISE SECTION) */
+  display: flex;
+  flex-flow: row wrap;
+  }
+        .category-plant {                                                   /* SECTION ENTOURANT UNE CATÉGORIE DE PLANTES */
+          margin: auto;
+          padding: 15px 0 25px 0;
+        }
+              .category-plant-title {                                               /* BOUTONS VERS LES DIFFÉRENTES CATÉGORIES DE PLANTES */ 
+                width: 430px;
+                font-family: 'Pangolin' !important;
+                font-size: 23px;
+                background-color: rgb(0,217,255);
+                background-image: linear-gradient(to top, rgb(0,217,255) 0%, rgb(225,252,127) 100%);
+              }
+              .category-plant-title:hover {                                         /* BOUTONS VERS LES DIFFÉRENTES CATÉGORIES DE PLANTES AU SURVOL */
+                background-color: rgb(9,255,0);
+                background-image: linear-gradient(to bottom left, rgb(9,255,0) 0%, rgb(0,4,255) 100%);
+                font-weight: bold;
+              }
+              .category-plant-title:active {                                        /* BOUTONS VERS LES DIFFÉRENTES CATÉGORIES DE PLANTES AU CLIC */ 
+                border: 2px solid rgb(0,0,0);
+              }
+                                  /* --------------- CHANGEMENT TEXTE AU SURVOL CURSEUR --------------- */
+
+                      .category {                                                           /* CLASS ENGLOBANT TOUT LE PROCESSUS DE CHANGEMENT DE MOTS */
+                        height: 37px;
+                        position: relative;
+                      }
+                      .category-out, 
+                      .category-in {                                                        /* MOTS CHANGEANT AVEC CURSEUR */
+                        text-align: center;  
+                        transition: opacity 0.3s ease;
+                        position: absolute;
+                        top: 0; 
+                        right: 0; 
+                        bottom: 0; 
+                        left: 0;
+                        font-size: 23px;
+                        z-index: 0;
+                      }
+                      .category-in,
+                      .category:hover .category-out {                                       /* OPACITÉ QUAND CURSEUR DEDANS */
+                        opacity: 0;
+                      }
+                      .category-out,
+                      .category:hover .category-in {                                        /* OPACITÉ MOT QUAND CURSEUR EN-DEHORS */
+                        opacity: 1;
+                      }
+                                  /* --------------- FIN CHANGEMENT TEXTE AU SURVOL CURSEUR --------------- */                                                      
+
+                                  /* FIN MAIN */
+
+                                  /* --------------- DÉBUT FOOTER --------------- */
+
+
+.all-btn-footer {                                                       /* TOUS LES BOUTONS DU FOOTER */
+  width: 35%;
+  margin: auto;
+  text-align: center;
+}
+.btn-nav-footer {                                                       /* STYLES DES BOUTONS DE NAVIGATION */
+  margin: 5px 0px 5px 0px;
+  border: 1px solid rgb(0,0,0); 
+  background-color: rgb(0,255,255);
+  background-image: linear-gradient(to right, rgb(0,255,255) 0%, rgb(0, 255, 76) 100%);
+  font-size: 20px;
+}
+.btn-nav-footer:hover {                                                 /* STYLES DES BOUTONS DE NAVIGATION AU SURVOL */
+  background-color: rgb(0,255,255);
+  background-image: linear-gradient(to left, rgb(0,255,255) 0%, rgb(0, 255, 76) 100%);
+}
+.btn-top {
+  text-align: center;
+}
+.btn-top-footer {                                                       /* STYLE BOUTON HAUT DE PAGE */
+  margin: 5px 0 10px 0;
+  background-color: rgb(6,250,6);
+  background-image: linear-gradient(to right, rgb(6,250,6) 0%, rgb(250, 95, 6) 100%);
+  font-size: 20px;
+}
+.btn-top-footer:hover {                                                 /* BOUTON HAUT DE PAGE AU SURVOL */
+  background-color: rgb(6,250,6);
+  background-image: linear-gradient(to left, rgb(6,250,6) 0%, rgb(250, 95, 6) 100%);
+}
+
+                                  /* --------------- FIN FOOTER --------------- */
+
+                            /* --------------- DÉBUT RESPONSIVE --------------- */
+                                                                                                          
+                                    @media screen and (max-width: 1500px) {                        /* RESPONSIVE MAX 1500 PIXELS */
+                                      .title {                                                            /* TITLE HEADER */
+                                        font-size: 30px; 
+                                      }
+                                      .sub-title, .sub-sub-title {                                        /* SUB-TITLE ET SUB-SUB-TITLE HEADER */
+                                        font-size: 20px;
+                                      }
+                                    }
+                                    @media screen and (max-width: 900px){                                 /* RESPONSIVE MAX 900 PIXELS DE LARGE */
+                                      body{                                                               /* CHANGEMENT BACKGROUND */
+                                        background: url("../img/background/welcomemobile.jpg") fixed;
+                                        }
+                                      header {                                                            /* TITRE, SOUS-TITRE, BOUTONS NAVIGATION */          
+                                        flex-flow: column;
+                                      }
+                                      .site-desc {                                                        /* SECTION CONTENANT TITLE, SUB-TITLE ET SUB-SUB-TITLE */
+                                        width: 95%;
+                                        margin: 7% auto 1% auto;
+                                      }
+                                      .all-btn-header,
+                                      .all-btn-footer {                                                   /* BOUTONS HEADER ET FOOTER */
+                                        width: auto;
+                                      }
+                                      .title {                                                            /* TITLE HEADER */
+                                        font-size: 22.5px; 
+                                      }
+                                      .sub-title, 
+                                      .sub-sub-title {                                                    /* SUB-TITLE ET SUB-SUB-TITLE HEADER */
+                                        font-size: 17.5px;
+                                      }
+                                      .btn-nav-header,
+                                      .btn-nav-footer,
+                                      .btn-top-footer,
+                                      .modal-btn {                                                        /* STYLES DES BOUTONS DE NAVIGATION TOP ET FENËTRES MODALES */
+                                        font-size: 15px;
+                                      }
+                                      .category-plant-title,
+                                      .resize {                                                           /* REDIMENSIONNEMENT AUTOMATIQUE BOUTONS CATÉGORIES ET IMG  */
+                                        width: 95%;
+                                        height: 95%;
+                                        margin: auto 2.5% ;
+                                      }
+                                      .category-in,
+                                      .category-out {                                                     /* CATÉGORIE PLANTE QUAND CURSEUR DEDANS OU DEHORS */
+                                        font-size: 20px;
+                                      }
+                                    }
+                                    @media screen and (max-width: 650px) {
+                                      .site-desc {                                                        /* SECTION CONTENANT TITLE, SUB-TITLE ET SUB-SUB-TITLE */
+                                        margin: 10% auto 1% auto;
+                                      }
+                                    }
+                                    @media screen and (max-width: 480px){                          /* RESPONSIVE MAX 480 PIXELS DE LARGE */
+                                      .site-desc {                                                        /* SECTION CONTENANT TITLE, SUB-TITLE ET SUB-SUB-TITLE */
+                                        margin: 12% auto 1% auto;
+                                      }
+                                      .menu-scroll {                                                      /* MASQUAGE LE MENU DÉROULANT */
+                                        display: none;
+                                      }
+                                    }
+                            /* --------------- FIN RESPONSIVE --------------- */

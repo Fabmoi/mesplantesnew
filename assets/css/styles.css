@@ -1,0 +1,373 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: ' ';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+                                  /* --------------- FIN RESET CSS --------------- */
+
+html {
+font-size: 20px;
+font-family: 'Akaya Telivigala', serif;
+scroll-behavior: smooth;
+}                                                   /* --------------- BACKGROUNDS --------------- */
+#adenium-background {
+background: url("../img/background/adenium.jpg") fixed;
+}
+#alocasia-background {
+    background: url("../img/background/alocasia.jpg") fixed;
+}
+#aloe-background {
+    background: url("../img/background/aloe.jpg") fixed;
+}
+#anthurium-background {
+    background: url("../img/background/anthurium.jpg") fixed;
+}
+#bromelia-background {
+    background: url("../img/background/bromelia.jpg") fixed;
+}
+#cactus-suspended-background {
+    background: url("../img/background/cactussuspended.jpg") fixed;
+}
+#calathea-background {
+    background: url("../img/background/calathea.jpg") fixed;
+}
+#carnivorous-background{
+    background: url("../img/background/carnivores.jpg") fixed;
+}
+#crassula-background {
+    background: url("../img/background/crassula.jpg") fixed;
+}
+#creeping-plant-background {
+    background: url("../img/background/creepingplant.jpg") fixed;
+}
+#dracaena-background {
+    background: url("../img/background/dracaena.jpg") fixed;
+}
+#euphorbias-background {
+    background: url("../img/background/euphorbias.jpg") fixed;
+}
+#ferns-background {
+    background: url("../img/background/ferns.jpg") fixed;
+}
+#ferocactus-background {
+    background: url("../img/background/ferocactus.jpg") fixed;
+}
+#ficus-background {
+    background: url("../img/background/ficus.jpg") fixed;
+}
+#gymnocalicium-background {
+    background: url("../img/background/gymnocalicium.jpg") fixed;
+}
+#kalanchoe-background {
+    background: url("../img/background/kalanchoe.jpg") fixed;
+}
+#mammillaria-background {
+    background: url("../img/background/mammillaria.jpg") fixed;
+}
+#monstera-background {
+    background: url("../img/background/monstera.jpg") fixed;
+}
+#notocactus-background {
+    background: url("../img/background/notocactus.jpg") fixed;
+}
+#opuntia-background {
+    background: url("../img/background/opuntiamonacanthamonstruosisvariegata.jpg") fixed;
+}
+#orchids-background {
+    background: url("../img/background/orchids.jpg") fixed;
+}
+#other-cactus-background {
+    background: url("../img/background/cactus.jpg") fixed;
+}
+#other-plants-background {
+    background: url("../img/background/solanumquitoensejurassica.jpg") fixed;
+}
+#other-succulents-background {
+    background: url("../img/background/othersucculents.jpg") fixed;
+}
+#other-suspended-background {
+    background: url("../img//background/othersuspended.jpg") fixed;
+}
+#palm-trees-background {
+    background: url("../img/background/palmtrees.jpg") fixed;
+}
+#phalaenopsis-background {
+    background: url("../img/background/phalaenopsis.jpg") fixed;
+}
+#philodendrons-background {
+    background: url("../img/background/philo.jpg") fixed;
+}
+#polyscias-background {
+    background: url("../img/background/polyscias.jpg") fixed;
+}
+#tillandsia-background {
+    background: url("../img/background/tillandsia.jpg") fixed;
+}
+#yucca-background {
+    background: url("../img/background/yucca.jpg") fixed;
+}
+                                                    /* --------------- FIN BACKGROUNDS --------------- */
+a:link {                                                            /* SUPPRESSION SOULIGNEMENTS DES LIENS (BOUTONS) */
+    text-decoration: none;
+}
+                                                    /* --------------- DÉBUT HEADER --------------- */
+
+header, 
+header h2 a {                                                                 /* BLOC ENGLOBANT TITLE ET SUB-TITLE */
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+        .title-index-category,
+        .title-gallery-category {                                                   /* TITLE INDEX CATÉGORIES ET GALLERY */
+            margin: 10px 0;
+            font-size: 45px;
+            font-weight: bold;
+            background-color: rgba(255,255,255,0.4);
+        }
+        .sub-title-index-category,
+        .sub-title-gallery-category {                                               /* SUB-TITLE INDEX CATÉGORIES ET GALLERY */               
+            font-size: 30px;
+            font-weight: bold;
+            background-color: rgba(255,255,255,0.4);
+        }
+        header h2 a:hover{                                                          /*ANCRES VERS PLANTES DANS SUB-TITLE AU SURVOL */
+            background: rgb(0, 255, 0);
+        }
+                                                    /* --------------- FIN HEADER --------------- */
+
+
+.species-title-gallery-category {                                               /* NOMS PLANTES GALLERY */
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255,255,255,0.4);
+}
+.species a,
+.species-title-gallery-category a {                                             /* COULEUR NOMS PLANTES DANS ONGLET NOM */
+    color: rgb(0,0,0);
+}
+.species a:hover,
+.species-title-gallery-category a:hover,
+.species-repotting-info:hover,
+.install-tillandsia-info:hover {                                                /* COULEUR NOMS PLANTES DANS ONGLET NOM AU SURVOL - LIEN DANS GALERIE PHOTO AU SURVOL - LIEN DANS ONGLET REMPOTAGE AU SURVOL */
+    background: rgb(0, 255, 0);
+}
+.species-repotting-info,
+.install-tillandsia-info {                                                      /* LIEN DANS ONGLET REMPOTAGE */
+    width: 400px;
+    margin: 10px auto 0 auto;
+    font-size: 25px;
+    display: flex;
+}
+hr {                                                                            /* LIGNES DE SÉPARATION ENTRE CHAQUE ESPÈCE DE PLANTES */
+    height: 5px;
+    border: none;
+    border: double rgba(0,0,0);
+    text-align: center;
+}
+section {                                                                       /* SECTIONS CONTENANT CHAQUE PLANTE INDIVIDUELLEMENT */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex {                                                                         /* CLASS DE CHAQUE IMG DE LA GALLERY */
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 10px inset rgb(128, 128, 128);
+}
+.species {                                                                      /* CLASS NOM PLANTE DANS LES ONGLETS 'NOM' */
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+                                                    /* --------------- MENU À ONGLETS DES LES INDEX ---------------*/
+
+:root {                                                                         /* VARIABLE POUR DONNER UNE COULEUR */
+    --accent: rgb(0, 0, 255);
+}
+.index-category-system-tabs {                                                   /* SECTION ENGLOBANT TOUT LE SYSTÈME */
+    width: 65%;
+    display: block;
+    margin: auto;
+}                                              
+.index-category-nav-tabs {                                                      /* ONGLETS */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+.index-category-nav-tabs a {                                                    /* NOMS ET ANCRES DES ONGLETS */
+    margin-left: 10px;
+    padding: 8px 16px;
+    border-top: 1px solid rgb(0,0,0);
+    border-right: solid 1px rgb(0,0,0);
+    border-left: 1px solid rgb(0,0,0);
+    background-color: rgb(0, 255, 255);
+    text-decoration: none;    
+}
+.index-category-nav-tabs a[aria-selected="true"] {                              /* ONGLET SÉLECTIONNÉ PAR LA TABULATION */
+    box-shadow: 0px 5px 0px rgb(127,255,212);
+    background:rgb(127,255,212);
+    color:rgb(0,0,0);
+}
+.index-category-nav-tabs a:hover,
+.index-category-nav-tabs a:focus {                                              /* ONGLET AU SURVOL ET SÉLECTIONNÉ AU CLIC */
+    background: var(--accent) linear-gradient(to top,rgba(255,255,255,.5), rgba(255,255,255,.5));
+    color: rgb(255, 255, 255);
+}
+.index-category-tab-content {                                                   /* CONTENU VISIBLE UNE FOIS L'ONGLET OUVERT */
+    padding: 10px 0px;
+    min-height: 243px;
+    border: 2px solid rgb(0,0,0);
+    background: rgb(127,255,212);
+    text-align: center;
+}
+                                                    /* --------------- FIN MENU À ONGLETS DES LES INDEX ---------------*/
+
+                                                    /* --------------- BOUTONS NAVIGATION ET TOP --------------- */
+                                                
+.btn-index-category {                                                            /* ALIGNEMENT CENTRAL DE TOUS LES BOUTONS */
+    text-align: center;
+}
+.styled-btn-index,
+.styled-btn-gallery, 
+.styled-btn-welcome {                                                            /* STYLES DES BOUTONS DE NAVIGATION */
+    margin: 5px 0px 5px 0px;
+    border: 1px solid rgb(0,0,0); 
+    background-color: rgb(0,255,255);
+    background-image: linear-gradient(to right, rgb(0,255,255) 0%, rgb(0, 255, 76) 100%);
+    font-size: 20px;
+    font-family: 'Pangolin';
+    font-weight: bold;
+    line-height: 1.5;              
+}  
+.styled-btn-gallery:hover,
+.styled-btn-index:hover,
+.styled-btn-welcome:hover  {                                                     /* STYLES DES BOUTONS DE NAVIGATION AU SURVOL */
+    background-color: rgb(0,255,255);
+    background-image: linear-gradient(to left, rgb(0,255,255) 0%, rgb(0, 255, 76) 100%);
+} 
+.styled-btn-top {                                                               /* STYLES BOUTON HAUT DE PAGE */
+    margin: 5px 0 10px 0;
+    background-color: rgb(6,250,6);
+    background-image: linear-gradient(to right, rgb(6,250,6) 0%, rgb(250, 95, 6) 100%);
+    font-size: 20px;
+    font-family: 'Pangolin';
+    font-weight: bold;
+    line-height: 1.8;    
+}
+.styled-btn-top:hover {                                                         /* STYLES BOUTON HAUT DE PAGE AU SURVOL */
+    background-color: rgb(6,250,6);
+    background-image: linear-gradient(to left, rgb(6,250,6) 0%, rgb(250, 95, 6) 100%);
+}
+                                                    /* --------------- FIN BOUTONS NAVIGATION ET TOP --------------- */
+
+                                                    /* --------------- DÉBUT RESPONSIVE --------------- */
+
+                @media screen and (max-width: 1490px) {                                    /* ÉCRAN MAXIMUM 1490PX DE LARGE */  
+                    .title-index-category,
+                    .title-gallery-category {                                                       /* TITLE INDEX CATÉGORIES ET GALLERY */
+                        font-size: 40px;
+                    }
+                    .sub-title-index-category,
+                    .sub-title-gallery-category {                                                   /* SUB-TITLE INDEX CATÉGORIES ET GALLERY */ 
+                        font-size: 30px;
+                    }
+                    .index-category-system-tabs {                                                   /* SECTION ENGLOBANT TOUT LE SYSTÈME */
+                        width: 75%;
+                    }
+                    .index-category-nav-tabs {                                                      /* ONGLETS */
+                       font-size: 18px;  
+                    }
+                    .species {                                                                      /* CLASS NOM PLANTE DANS LES ONGLETS 'NOM' */
+                        font-size: 25px;
+                    }
+                }
+                @media screen and (max-width: 1290px) {                                     /* ÉCRAN MAXIMUM 1290PX DE LARGE */
+                    .index-category-nav-tabs {                                                      /* ONGLETS */
+                        font-size: 15px;
+                    }
+                }
+                @media screen and (max-width: 1080px) {                                     /* ÉCRAN MAXIMUM 1080PX DE LARGE */
+                    header {                                                                        /* BLOC ENGLOBANT TITLE ET SUB-TITLE */
+                        padding-top: 30px;
+                    }     
+                    .index-category-system-tabs {                                                   /* SECTION ENGLOBANT TOUT LE SYSTÈME */
+                        width: 100%;
+                    }
+                    .index-category-tab-content {                                                   /* CONTENU VISIBLE UNE FOIS L'ONGLET OUVERT */
+                        font-size: 18px;
+                    }
+                    .species {                                                                      /* CLASS NOM PLANTE DANS LES ONGLETS 'NOM' */
+                        font-size: 22px;
+                    }
+                }
+                @media screen and (max-width: 650px) {                                      /* ÉCRAN MAXIMUM 650PX DE LARGE */
+                    .title-index-category,
+                    .title-gallery-category {                                                       /* TITLE INDEX CATÉGORIES ET GALLERY */
+                        font-size: 30px;
+                    }
+                    .sub-title-index-category,
+                    .sub-title-gallery-category {                                                   /* SUB-TITLE INDEX CATÉGORIES ET GALLERY */ 
+                        font-size: 22px;
+                    }
+                    .styled-btn-top,
+                    .styled-btn-index,
+                    .styled-btn-gallery, 
+                    .styled-btn-welcome {                                                           /* STYLES DES BOUTONS DE NAVIGATION ET TOP*/
+                        font-size: 15px;       
+                    }
+                }
+                @media screen and (max-width: 480px) {                                      /* ÉCRAN MAXIMUM 480PX DE LARGE */
+                    .flex {                                                                         /* CLASS DE CHAQUE IMG DE LA GALLERY */
+                        border: none;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        height: 98%;
+                        width: 98%;
+                    }
+                    .species-title-gallery-category {                                               /* NOMS PLANTES GALLERY */
+                        font-size: 20px;
+                        }
+                }
+                                                    /* --------------- FIN RESPONSIVE --------------- */

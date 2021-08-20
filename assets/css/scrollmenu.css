@@ -1,0 +1,100 @@
+                                    /* --------------- MENU DÉROULANT --------------- */
+                
+.menu-scroll-fixed {                                                /* CLASS POUR LE STICKY DANS LE JAVASCRIPT */
+position: fixed;
+top: 0;
+left: 15px;
+text-shadow: 4px 4px 4px rgb(0,0,0);
+z-index: 2;
+}
+.menu-scroll {                                                      /* MENU DÉROULANT */
+position: absolute;
+left: 15px;
+top: 10px;
+text-shadow: 4px 4px 4px rgb(0,0,0);
+z-index: 2;
+}
+.menu-scroll, 
+.menu-scroll ul, 
+.menu-scroll-fixed ul {                                           /* MENU ET ENFANT ul DU MENU -- CELUI QUI EST VISIBLE ET CHANGE DE MOT AU SURVOL */                                        
+padding: 0;
+margin: 0;
+list-style: none;
+text-align: center;
+}
+.menu-scroll li, 
+.menu-scroll-fixed li {                                           /* ENFANT li DU MENU -- CELUI QUI EST VISIBLE ET CHANGE DE MOT AU SURVOL */
+display: inline-block;
+vertical-align: top;
+position: relative;
+}
+.menu-scroll li li, 
+.menu-scroll-fixed li li {                                        /* PETITS-ENFANTS li DU MENU -- CEUX CONTENANT LES NOMS DES CATÉGORIES DE PLANTES SE TROUVANT À GAUCHE */
+display: inherit;
+}
+.menu-scroll a, 
+.menu-scroll-fixed a {                                            /* ENFANT a DU MENU -- CELUI QUI EST VISIBLE ET CHANGE DE MOT AU SURVOL */
+display: block;
+padding: 5px 50px;
+text-decoration: none;
+color: rgb(0,0,0);
+}
+.menu-scroll ul li a, 
+.menu-scroll-fixed ul li a {                                      /* ENFANTS a DES ENFANTS li DES ENFANTS ul DU MENU -- CEUX CONTENANT LES NOMS DES CATÉGORIES DE PLANTES SE TROUVANT À GAUCHE */
+padding: 5px 8px;
+}
+.menu-scroll ul, 
+.menu-scroll-fixed ul {                                           /* ENFANT ul DU MENU -- CELUI QUI EST VISIBLE ET CHANGE DE MOT AU SURVOL */
+position: absolute;
+z-index: 1000;
+min-width: 100%;
+white-space: nowrap;
+text-align: left;
+}
+.menu-scroll ul ul, 
+.menu-scroll-fixed ul ul {                                        /* ENFANTS ul DES ENFANTS ul DU MENU -- CEUX S'OUVRANT SUR LA DROITE */
+left: 100%;
+top: 0;
+overflow: hidden;
+max-width: 0;
+min-width: 0;
+transition: 0.7s all;
+}
+.menu-scroll ul li:hover ul, 
+.menu-scroll-fixed ul li:hover ul {                               /* ENFANTS ul DES ENFANTS li (AU SURVOL) DES ENFANTS ul DU MENU -- CEUX S'OUVRANT SUR LA DROITE */
+max-width: 350px;
+}
+.menu-scroll ul li, 
+.menu-scroll-fixed ul li {                                        /* ENFANTS li DES ENFANTS ul DU MENU -- CEUX S'OUVRANT SUR LA GAUCHE */
+max-height: 0;
+overflow: hidden;
+transition: all 0.3s;
+}
+.menu-scroll li li li, 
+.menu-scroll-fixed li li li {                                     /* ENFANTS li DES ENFANTS li DES ENFANTS li DU MENU -- CEUX S'OUVRANT SUR LA DROITE */
+max-height: inherit;
+}
+.menu-scroll li:hover li, 
+.menu-scroll-fixed li:hover li {                                  /* ENFANTS li DES ENFANTS li (AU SURVOL) DU MENU -- TOUT CEUX S'OUVRANT AU DÉROULEMENT DU MENU */
+max-height: 35px;
+overflow: visible;
+}
+.menu-green{                                                      /* COULEUR DU MENU -- CELUI QUI EST VISIBLE ET CHANGE DE MOT AU SURVOL */                                                       
+background-color: rgb(207,255,106);
+background-image: linear-gradient(to bottom, rgb(207,255,106) 0%, rgb(103,127,53) 100%);
+}
+.menu-green li {                                                  /* COULEUR DE TOUS CEUX S'OUVRANT À GAUCHE ET À DROITE */
+background-color:rgb(103,127,53);
+background-image: linear-gradient(to bottom, rgb(207,255,106) 0%, rgb(103,127,53) 100%);
+}
+.menu-green li:hover {                                            /* COULEUR DE TOUS AUX SURVOL */
+background: rgb(207,255,106);
+}
+.menu-scroll li:hover a, 
+.menu-scroll li li:hover a, 
+.menu-scroll-fixed li:hover a, 
+.menu-scroll-fixed li li:hover a {                                /* COULEUR ET BORDURE DE TOUTES LES CASES DU MENU AU SURVOL */
+border: 1px dotted rgb(0,0,0);
+color :rgb(0,0,0);
+}                                    
+                                /* --------------- FIN DU MENU DÉROULANT --------------- */
