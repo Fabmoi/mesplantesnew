@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Aeschynanthus marmoratus</title>
-<body onload="prot()" id="repotting-aeschynanthus-marmoratus">
+<body id="repotting-aeschynanthus-marmoratus">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Aeschynanthus marmoratus</h1>

@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Solanum quitoense jurassica</title>
-<body onload="prot()" id="repotting-solanum-quitoense-jurassica">
+<body id="repotting-solanum-quitoense-jurassica">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Solanum quitoense jurassica</h1>

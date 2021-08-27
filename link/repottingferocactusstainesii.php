@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Ferocactus stainesii</title>
-<body onload="prot()" id="repotting-ferocactus-stainesii">                      
+<body id="repotting-ferocactus-stainesii">                      
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Ferocactus stainesii</h1>

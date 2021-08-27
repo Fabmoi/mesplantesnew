@@ -1,6 +1,6 @@
 <?php require '../headerindexcategory.php'; ?>
 
-<body onload="prot()" id="aloe-background">
+<body id="aloe-background">
 <title>Galerie photo de mes Aloe</title>
     <header>                                                                                    <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>

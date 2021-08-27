@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Adenium</title>
-<body onload="prot()" id="adenium-background">
+<body id="adenium-background">
     <header>                                                                    <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
         <div>
             <h1 class="title-gallery-category" id="top"> Galerie photo de mes Adenium</h1>

@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes plantes grimpantes</title>
-<body onload="prot()" id="creeping-plant-background">
+<body id="creeping-plant-background">
     <header>                                                                                    <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
         <div>
             <h1 class="title-gallery-category" id="top"> Galerie photo de mes plantes grimpantes</h1>

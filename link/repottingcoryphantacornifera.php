@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Coryphanta cornifera</title>
-<body onload="prot()" id="repotting-coryphanta-cornifera">
+<body id="repotting-coryphanta-cornifera">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Coryphanta cornifera</h1>

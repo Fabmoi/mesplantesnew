@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Polyscias</title>
-<body onload="prot()" id="polyscias-background">
+<body id="polyscias-background">
  <main>   
 	<header>                                                                                            <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
         <div>

@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Philodendrons</title>
-<body onload="prot()" id="philodendrons-background">
+<body id="philodendrons-background">
  <main>   
 	<header>                                                                                                    <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>

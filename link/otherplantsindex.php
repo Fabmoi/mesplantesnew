@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Mes Autres plantes vertes</title>
-    <body onload="prot()" id="other-plants-background">
+    <body id="other-plants-background">
         <header>                                                                <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
            <div>
                 <h1 class="title-index-category" id="top">MES AUTRES PLANTES VERTES</h1>

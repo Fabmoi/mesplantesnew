@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Crassula</title>
-<body onload="prot()" id="crassula-background">
+<body id="crassula-background">
  <main>   
 	<header>                                                                                            <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>

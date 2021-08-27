@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Vanilla planifolia</title>
-<body onload="prot()" id="repotting-vanilla-planifolia">
+<body id="repotting-vanilla-planifolia">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Vanilla planifolia</h1>

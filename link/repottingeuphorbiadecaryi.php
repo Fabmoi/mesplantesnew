@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Euphorbia decaryi</title>
-<body onload="prot()" id="repotting-euphorbia-decaryi">
+<body id="repotting-euphorbia-decaryi">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Euphorbia decaryi</h1>

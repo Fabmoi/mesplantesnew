@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Mes Philodendrons</title>
-    <body onload="prot()" id="philodendrons-background">
+    <body id="philodendrons-background">
         <header>                                                                <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
           <div>
               <h1 class="title-index-category" id="top">MES PHILODENDRONS</h1>

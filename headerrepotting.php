@@ -6,5 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/stylesrepottingspecies.css">
     <link rel="stylesheet" href="../assets/css/installtillandsia.css">
+    <link rel="shortcut icon" type="image/jpg" href="/assets/img/favicon/favicon.jpg"/>
     <script type="text/javascript" src="../assets/js/protection.js"></script>
 </head>

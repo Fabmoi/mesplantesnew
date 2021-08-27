@@ -1,0 +1,94 @@
+/* --------------- MENU DÉROULANT --------------- */
+.menu-scroll-fixed-js {                                                /* CLASS POUR LE STICKY DANS LE JAVASCRIPT */
+position: fixed;
+top: 0;
+left: 15px;
+text-shadow: 4px 4px 4px rgb(0,0,0);
+z-index: 2;
+}
+.all-menu-scroll {                                                      
+position: absolute;
+left: 15px;
+top: 10px;
+text-shadow: 4px 4px 4px rgb(0,0,0);
+z-index: 2;
+}
+ul ul {
+display: none;
+}
+li.menu-scroll-green,
+li.menu-scroll-letter,
+li.menu-scroll-category,
+li.menu-scroll-species {
+list-style-type: none; 
+position: relative; 
+max-width: 350px;
+}
+li:hover ul.menu-scroll-niv-two,
+li li:hover ul.menu-scroll-niv-three, 
+li li li:hover ul.menu-scroll-niv-four {
+display:block;
+}
+.menu-scroll-niv-one, 
+.menu-scroll-niv-one ul {                                      
+padding: 0;
+margin: 0;
+text-align: center;
+}
+.menu-scroll-niv-one li { 
+vertical-align: top;
+position: relative;
+}
+.menu-scroll-niv-one li li {                                     
+display: inherit;
+}
+.menu-scroll-niv-one a {                                         
+display: block;
+padding: 5px 50px;
+text-decoration: none;
+}
+.menu-scroll-niv-one ul ul li a {                                    
+padding: 5px 8px;
+}
+.menu-scroll-niv-one ul {                                       
+position: absolute;
+z-index: 1000;
+min-width: 100%;
+white-space: nowrap;
+text-align: left;
+}
+.menu-scroll-niv-one ul ul {                                     
+left: 100%;
+top: 0;
+max-width: 0;
+min-width: 0;
+}
+.menu-scroll-niv-one ul li:hover ul
+{                             
+max-width: 350px;
+}
+.menu-scroll-niv-one li li li, 
+.menu-scroll-niv-one li li li li {                                  
+max-height: inherit;
+}
+.menu-scroll-niv-one li:hover li {                                  
+max-height: 35px;
+overflow: visible;
+}
+.menu-scroll-green{                                                      
+background-color: rgb(207,255,106);
+background-image: linear-gradient(to bottom, rgb(207,255,106) 0%, rgb(103,127,53) 100%);
+}
+.menu-scroll-green li {                                                  
+background-color:rgb(103,127,53);
+background-image: linear-gradient(to bottom, rgb(207,255,106) 0%, rgb(103,127,53) 100%);
+}
+.menu-scroll-green li:hover {                                            
+background: rgb(207,255,106);
+}
+.menu-scroll-niv-one li:hover a, 
+.menu-scroll-niv-one li li:hover a {                                
+border: 1px dotted rgb(0,0,0);
+color :rgb(0,0,0);
+}   
+/* --------------- MENU DÉROULANT --------------- */

@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Yucca elephantipes</title>
-<body onload="prot()" id="repotting-yucca-elephantipes">
+<body id="repotting-yucca-elephantipes">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Yucca elephantipes</h1>

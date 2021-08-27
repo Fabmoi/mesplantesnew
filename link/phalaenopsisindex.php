@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Mes Phalaenopsis</title>
-    <body onload="prot()" id="phalaenopsis-background">
+    <body id="phalaenopsis-background">
       <header>                                                                  <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
            <div>
                 <h1 class="title-index-category" id="top">MES PHALAENOPSIS</h1>

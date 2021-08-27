@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Mes Cactus en suspension</title>
-    <body onload="prot()" id="cactus-suspended-background">
+    <body id="cactus-suspended-background">
       <header>                                                                  <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
           <div>
             <h1 class="title-index-category" id="top">MES CACTUS EN SUSPENSION</h1>

@@ -12,7 +12,7 @@
     <title>Arrosages</title>
     
   </head>
-  <body onload="prot()">
+  <body>
      <header>
          <u class="title">Arrosages</u>
          <p class="subtitle">Voici mes façons d'effectuer les arrosages avec quelques explications sur mes différentes manières de faire ainsi que mes raisons.</p>

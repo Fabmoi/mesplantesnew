@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Kalanchoe</title>
-<body onload="prot()" id="kalanchoe-background">
+<body id="kalanchoe-background">
 <main>   
 	<header>                                                                                            <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>

@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Installation Nepenthes en cadre végétal</title>
-<body onload="prot()" id="install-nepenthes-frame">
+<body id="install-nepenthes-frame">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div>

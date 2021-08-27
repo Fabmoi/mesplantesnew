@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Semis Solanum quitoense jurassica</title>
-<body onload="prot()" id="sowing-solanum-quitoense-jurassica">
+<body id="sowing-solanum-quitoense-jurassica">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div>

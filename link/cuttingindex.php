@@ -12,7 +12,7 @@
     <title>Bouturages</title>
     
   </head>
-  <body onload="prot()">
+  <body>
      <header>
          <u class="title">Bouturages</u>
          <p class="subtitle">Voici mes façons d'effectuer les bouturages avec quelques explications sur mes différentes manières de faire ainsi que mes raisons.</p>

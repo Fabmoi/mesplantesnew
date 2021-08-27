@@ -13,7 +13,7 @@
     
   </head>
   
-  <body onload="prot()">
+  <body>
      
        <header>
          <h1 class="title">Rempotages</h1>

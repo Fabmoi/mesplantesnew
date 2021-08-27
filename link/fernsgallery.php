@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Fougères</title>
-<body onload="prot()" id="ferns-background">
+<body id="ferns-background">
  <main>   
 	<header>                                                                    <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>

@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Notocactus magnificus</title>
-<body onload="prot()" id="repotting-notocactus-magnificus">                      
+<body id="repotting-notocactus-magnificus">                      
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Notocactus magnificus</h1>

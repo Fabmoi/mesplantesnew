@@ -2,7 +2,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes autres Cactus</title>
-<body onload="prot()" id="other-cactus-background">
+<body id="other-cactus-background">
 <main>
     <header>                                                                                                    <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>

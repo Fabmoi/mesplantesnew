@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Installation Phalaenopsis en suspension</title>
-<body onload="prot()" id="repotting-phalaenopsis-column">
+<body id="repotting-phalaenopsis-column">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div>

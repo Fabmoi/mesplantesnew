@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Calathea</title>
-<body onload="prot()" id="calathea-background">
+<body id="calathea-background">
 	<main>    
 	<header> 																										<!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>

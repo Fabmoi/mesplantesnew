@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Echinopsis subdenudata</title>
-<body onload="prot()" id="repotting-echinopsis-subdenudata">                      
+<body id="repotting-echinopsis-subdenudata">                      
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Echinopsis subdenudata</h1>

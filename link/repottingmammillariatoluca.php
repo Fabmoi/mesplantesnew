@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Mammillaria toluca</title>
-<body onload="prot()" id="repotting-mammillaria-toluca">
+<body id="repotting-mammillaria-toluca">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Mammillaria toluca</h1>

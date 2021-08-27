@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Palmiers</title>
-<body onload="prot()" id="palm-trees-background">
+<body id="palm-trees-background">
  <main>   
 	<header>                                                                                            <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
         <div>

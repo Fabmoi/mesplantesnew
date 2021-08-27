@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Mes Dracaena</title>
-    <body onload="prot()" id="dracaena-background">
+    <body id="dracaena-background">
         <header>                                                                <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>
                 <h1 class="title-index-category" id="top">MES DRACAENA</h1>

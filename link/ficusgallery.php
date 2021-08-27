@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Ficus</title>
-<body onload="prot()" id="ficus-background">
+<body id="ficus-background">
  <main>   
 	<header>                                                                                    <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>

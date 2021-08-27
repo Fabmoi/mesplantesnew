@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Matucana polzii</title>
-<body onload="prot()" id="repotting-matucana-polzii">                      
+<body id="repotting-matucana-polzii">                      
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Matucana polzii</h1>

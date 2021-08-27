@@ -7,6 +7,8 @@
     <link href="../assets/css/styles.css" rel="stylesheet" type="text/css"/>
     <link href="../assets/css/scrollmenu.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Akaya+Telivigala" rel='stylesheet' type='text/css'/>
+    <link rel="shortcut icon" type="image/jpg" href="/assets/img/favicon/favicon.jpg"/>
     <script type="text/javascript" src="../assets/js/protection.js"></script>
     <script src="../assets/js/ariatabs.js" type="module" Defer></script>
 </head>
+<body onload="prot()" onmousedown="return false" onselectstart="return false">

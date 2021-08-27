@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Mammillaria</title>
-<body onload="prot()" id="mammillaria-background">
+<body id="mammillaria-background">
 <main>
     <header>                                                                                            <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>

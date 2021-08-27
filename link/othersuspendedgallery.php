@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Autres plantes suspendues</title>    
-<body onload="prot()" id="other-suspended-background">
+<body id="other-suspended-background">
  <main>   
 	<header>                                                                                                <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
         <div>

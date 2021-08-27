@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Monstera</title>
-<body onload="prot()" id="monstera-background">
+<body id="monstera-background">
  <main>   
 	<header>                                                                                        <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>

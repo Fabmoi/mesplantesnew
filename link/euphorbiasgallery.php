@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Euphorbes</title>
-<body onload="prot()" id="euphorbias-background">
+<body id="euphorbias-background">
  <main>   
 	<header> 																									<!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>

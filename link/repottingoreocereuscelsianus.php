@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Oreocereus celsianus</title>
-<body onload="prot()" id="repotting-oreocereus-celsianus">
+<body id="repotting-oreocereus-celsianus">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Oreocereus celsianus</h1>

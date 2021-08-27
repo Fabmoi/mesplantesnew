@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Mes  autres orchidées</title>
-    <body onload="prot()" id="orchids-background">
+    <body id="orchids-background">
       <header>                                                                  <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
           <div>
               <h1 class="title-index-category" id="top">MES AUTRES ORCHIDÉES</h1>

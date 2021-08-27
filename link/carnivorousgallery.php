@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Carnivores</title>
-<body onload="prot()" id="carnivorous-background">
+<body id="carnivorous-background">
  <main>   
 	<header> 																							<!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>

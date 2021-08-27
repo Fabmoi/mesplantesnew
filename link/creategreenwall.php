@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Création mur végétal pour plantes vertes</title>
-<body onload="prot()" id="create-green-wall">
+<body id="create-green-wall">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div>

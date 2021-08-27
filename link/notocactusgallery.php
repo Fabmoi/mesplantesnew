@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Notocactus</title>
-<body onload="prot()" id="notocactus-background">
+<body id="notocactus-background">
 <main>
     <header>                                                                                        <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>

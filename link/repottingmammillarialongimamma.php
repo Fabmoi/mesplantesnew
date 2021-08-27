@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Mammillaria longimamma</title>
-<body onload="prot()" id="repotting-mammillaria-longimamma">                      
+<body id="repotting-mammillaria-longimamma">                      
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Mammillaria longimamma</h1>

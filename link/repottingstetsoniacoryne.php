@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Stetsonia coryne</title>
-<body onload="prot()" id="repotting-stetsonia-coryne">
+<body id="repotting-stetsonia-coryne">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Stetsonia coryne</h1>

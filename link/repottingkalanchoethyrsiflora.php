@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Kalanchoe thyrsiflora</title>
-<body onload="prot()" id="repotting-kalanchoe-thyrsiflora">
+<body id="repotting-kalanchoe-thyrsiflora">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Kalanchoe thyrsiflora</h1>

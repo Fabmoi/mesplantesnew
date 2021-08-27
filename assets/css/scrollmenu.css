@@ -16,35 +16,35 @@ z-index: 2;
 }
 .menu-scroll, 
 .menu-scroll ul, 
-.menu-scroll-fixed ul {                                           /* MENU ET ENFANT ul DU MENU -- CELUI QUI EST VISIBLE ET CHANGE DE MOT AU SURVOL */                                        
+.menu-scroll-fixed ul {                                           
 padding: 0;
 margin: 0;
 list-style: none;
 text-align: center;
 }
 .menu-scroll li, 
-.menu-scroll-fixed li {                                           /* ENFANT li DU MENU -- CELUI QUI EST VISIBLE ET CHANGE DE MOT AU SURVOL */
+.menu-scroll-fixed li {                                      
 display: inline-block;
 vertical-align: top;
 position: relative;
 }
 .menu-scroll li li, 
-.menu-scroll-fixed li li {                                        /* PETITS-ENFANTS li DU MENU -- CEUX CONTENANT LES NOMS DES CATÉGORIES DE PLANTES SE TROUVANT À GAUCHE */
+.menu-scroll-fixed li li {                                 
 display: inherit;
 }
 .menu-scroll a, 
-.menu-scroll-fixed a {                                            /* ENFANT a DU MENU -- CELUI QUI EST VISIBLE ET CHANGE DE MOT AU SURVOL */
+.menu-scroll-fixed a {                                           
 display: block;
 padding: 5px 50px;
 text-decoration: none;
 color: rgb(0,0,0);
 }
 .menu-scroll ul li a, 
-.menu-scroll-fixed ul li a {                                      /* ENFANTS a DES ENFANTS li DES ENFANTS ul DU MENU -- CEUX CONTENANT LES NOMS DES CATÉGORIES DE PLANTES SE TROUVANT À GAUCHE */
+.menu-scroll-fixed ul li a {                                      
 padding: 5px 8px;
 }
 .menu-scroll ul, 
-.menu-scroll-fixed ul {                                           /* ENFANT ul DU MENU -- CELUI QUI EST VISIBLE ET CHANGE DE MOT AU SURVOL */
+.menu-scroll-fixed ul {                                           
 position: absolute;
 z-index: 1000;
 min-width: 100%;
@@ -52,7 +52,7 @@ white-space: nowrap;
 text-align: left;
 }
 .menu-scroll ul ul, 
-.menu-scroll-fixed ul ul {                                        /* ENFANTS ul DES ENFANTS ul DU MENU -- CEUX S'OUVRANT SUR LA DROITE */
+.menu-scroll-fixed ul ul {                                        
 left: 100%;
 top: 0;
 overflow: hidden;
@@ -61,21 +61,21 @@ min-width: 0;
 transition: 0.7s all;
 }
 .menu-scroll ul li:hover ul, 
-.menu-scroll-fixed ul li:hover ul {                               /* ENFANTS ul DES ENFANTS li (AU SURVOL) DES ENFANTS ul DU MENU -- CEUX S'OUVRANT SUR LA DROITE */
+.menu-scroll-fixed ul li:hover ul {                              
 max-width: 350px;
 }
 .menu-scroll ul li, 
-.menu-scroll-fixed ul li {                                        /* ENFANTS li DES ENFANTS ul DU MENU -- CEUX S'OUVRANT SUR LA GAUCHE */
+.menu-scroll-fixed ul li {                                        
 max-height: 0;
 overflow: hidden;
 transition: all 0.3s;
 }
 .menu-scroll li li li, 
-.menu-scroll-fixed li li li {                                     /* ENFANTS li DES ENFANTS li DES ENFANTS li DU MENU -- CEUX S'OUVRANT SUR LA DROITE */
+.menu-scroll-fixed li li li {                                     
 max-height: inherit;
 }
 .menu-scroll li:hover li, 
-.menu-scroll-fixed li:hover li {                                  /* ENFANTS li DES ENFANTS li (AU SURVOL) DU MENU -- TOUT CEUX S'OUVRANT AU DÉROULEMENT DU MENU */
+.menu-scroll-fixed li:hover li {                                  
 max-height: 35px;
 overflow: visible;
 }

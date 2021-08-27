@@ -1,7 +1,7 @@
 <?php require 'headerwelcomemodal.php'; ?>
 
 <title>Fenêtres modales</title>
-<body onload="prot()">                                
+<body>                                
 <section id="modal-update" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">     <!-- MODAL-UPDATE -->
         <div class="modal-wrapper js-modal-stop">
             <button class="js-modal-close">Fermer la boîte modale</button>
@@ -9,7 +9,30 @@
                     Mise en ligne de mon site en date du 11/04/21.</p>
                     <hr>
                         <div class="modal-update-left">
-                            <ul>
+                            <ul class="modal-update-text">
+                                <li>                                            <!-- 27/08/2021 -->
+                                        <div class="modal-date-flex">
+                                                27/08/2021:
+                                        </div>
+                                        <div class="modal-desc-flex">
+                                            <div>
+                                                &nbsp;&nbsp;_Modification du menu déroulant avec rangement par lettres avec 1 colonne supplémentaire.<br/>
+                                            </div>
+                                        </div>
+                                </li>
+                                <li>                                            <!-- 25/08/2021 -->
+                                        <div class="modal-date-flex">
+                                                25/08/2021:
+                                        </div>
+                                        <div class="modal-desc-flex">
+                                            <div>
+                                                &nbsp;&nbsp;_Ajout d'un Formulaire de contact sur la page d'accueil.<br/>
+                                                &nbsp;&nbsp;_Ajout d'un Fond d'écran aléatoire sur la page d'accueil.<br/>
+                                                &nbsp;&nbsp;_Ajout d'un Favicon (icone sur l'onglet du navigateur).<br/>
+                                                &nbsp;&nbsp;_Ajout de boutons pour changer le fond d'écran sur la page d'accueil. (Uniquement sur ordinateur)<br/>
+                                            </div>
+                                        </div>
+                                </li>
                                 <li>                                            <!-- 14/08/2021 -->
                                     <div class="modal-date-flex">
                                             14/08/2021:
@@ -321,42 +344,41 @@
                             </ul>               
                         </div>      
         </div>                
-    </section>                              
-    <section id="modal-soon" class="modal" role="dialog" aria-labelledby="modal-title">                          <!-- MODAL-SOON -->
-        <div class="modal-wrapper js-modal-stop">
-            <button class="js-modal-close">Fermer la boîte modale</button>
-                <p class="modal-soon-title">Liste des choses à venir:</p>
-                    <hr>
-                        <div>
-                            <ul>
-                                <li>_Ajout d'un formulaire de contact.</li>
-                                <li>_Ajout de plantes.</li>
-                                <li>_Ajout de photos.</li>
-                                <li>_Création pages <strong>rempotages.</strong></li>
-                                <li>_Ajout de menus déroulants dans chaque index fiches infos et galeries regroupant la liste des espèces présentes sur les pages concernées.</li>
-                            </ul>               
-                        </div>
-        </div>
-    </section>                                   
-    <section id="modal-author" class="modal" role="dialog" aria-labelledby="modal-title">                        <!-- MODAL-AUTHOR -->
-        <div class="modal-wrapper js-modal-stop">
-            <button class="js-modal-close">Fermer la boîte modale</button>   
-                <p class="modal-author-title">Auteur</p><br/>
-                <span class="moi">
-                    <div>    
-                        <span class="modal-click-change-img"><img class="modal-author-img-click-moi" src="assets/img/welcome/profile/moi.jpg" alt="moi"/>
-                        <img class="modal-author-img-click-joye" src="assets/img/welcome/profile/joye.jpg" alt="joye"/></span>
-                    </div>  
-                        <span><a href="https://www.facebook.com/fabian.fabianmoi" target="_blank">
-                            <img class="modal-facebook-img" src="assets/img/welcome/profile/facebook.png" alt="Lien vers mon profil Facebook" title="Lien vers mon profil Facebook"/></a></span>
-                        <span><a href="https://www.youtube.com/channel/UC7Ylr_Mz-9O6xf7vUEDrfOw" target="_blank">
-                            <img class="modal-youtube-img" src="assets/img/welcome/profile/youtube.jpg" alt="Lien vers ma chaîne Youtube" title="Lien vers ma chaîne Youtube"/></a></span>
+</section>                              
+<section id="modal-soon" class="modal" role="dialog" aria-labelledby="modal-title">                          <!-- MODAL-SOON -->
+    <div class="modal-wrapper js-modal-stop">
+        <button class="js-modal-close">Fermer la boîte modale</button>
+            <p class="modal-soon-title">Liste des choses à venir:</p>
+                <hr>
+                    <div>
+                        <ul>
+                            <li>_Ajout de plantes.</li>
+                            <li>_Ajout de photos.</li>
+                            <li>_Création pages <strong>rempotages.</strong></li>
+                            <li>_Ajout de menus déroulants dans chaque index fiches infos et galeries regroupant la liste des espèces présentes sur les pages concernées.</li>
+                        </ul>               
+                    </div>
+    </div>
+</section>                                   
+<section id="modal-author" class="modal" role="dialog" aria-labelledby="modal-title">                        <!-- MODAL-AUTHOR -->
+    <div class="modal-wrapper js-modal-stop">
+        <button class="js-modal-close">Fermer la boîte modale</button>   
+            <p class="modal-author-title">Auteur</p><br/>
+            <span class="moi">
+                <div>    
+                    <span class="modal-click-change-img"><img class="modal-author-img-click-moi" src="assets/img/welcome/profile/moi.jpg" alt="moi"/>
+                    <img class="modal-author-img-click-joye" src="assets/img/welcome/profile/joye.jpg" alt="joye"/></span>
+                </div>  
+                    <span><a href="https://www.facebook.com/fabian.fabianmoi" target="_blank">
+                        <img class="modal-facebook-img" src="assets/img/welcome/profile/facebook.png" alt="Lien vers mon profil Facebook" title="Lien vers mon profil Facebook"/></a></span>
+                    <span><a href="https://www.youtube.com/channel/UC7Ylr_Mz-9O6xf7vUEDrfOw" target="_blank">
+                        <img class="modal-youtube-img" src="assets/img/welcome/profile/youtube.jpg" alt="Lien vers ma chaîne Youtube" title="Lien vers ma chaîne Youtube"/></a></span>
 
-                                <hr class="modal-hr">                    
-                                    <p class="modal-text-bio"> Je m'appelle Fabian, né un 22 Novembre 1983 quelquepart sur cette planète et plus précisément dans un pays que l'on appelle Belgique. Je vis avec mon petit chien qui s'appelle Joye.<br/>
-                                    Passionné des plantes depuis toujours, j'ai décidé de créer une page web codée par moi-même afin de partager un peu mes connaissances et certaines de mes façons de m'en occuper.<br/>Bien entendu, je reste juste un passionné et non pas un expert mais mes plantes se portent très bien.
-                                    </p>
-        </div>
+                            <hr class="modal-hr">                    
+                                <p class="modal-text-bio"> Je m'appelle Fabian, né un 22 Novembre 1983 quelquepart sur cette planète et plus précisément dans un pays que l'on appelle Belgique. Je vis avec mon petit chien qui s'appelle Joye.<br/>
+                                Passionné des plantes depuis toujours, j'ai décidé de créer une page web codée par moi-même afin de partager un peu mes connaissances et certaines de mes façons de m'en occuper.<br/>Bien entendu, je reste juste un passionné et non pas un expert mais mes plantes se portent très bien.
+                                </p>
+    </div>
 </section>
 <?php require 'footerwelcomemodal.php'; ?>
 </body>

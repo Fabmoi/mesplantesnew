@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Installation Tillandsia</title>
-<body onload="prot()" id="install-tillandsia-background">
+<body id="install-tillandsia-background">
     <header>                                                                    <!-- TITLE, SUB-TITLE ET BOUTONS DE NAVIGATION -->
         <section class="tillandsia-install-desc">
             <div><h1 class="title-tillandsia-install-desc" id="top">Tillandsia installation</h1>

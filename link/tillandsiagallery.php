@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Tillandsia</title>
-<body onload="prot()" id="tillandsia-background">
+<body id="tillandsia-background">
 <main>   
 	<header>                                                                                                <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>

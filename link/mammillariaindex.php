@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Mes Mammillaria</title>
-    <body onload="prot()" id="mammillaria-background">
+    <body id="mammillaria-background">
         <header>                                                                <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>
                 <h1 class="title-index-category" class= "top">MES MAMMILLARIA</h1>

@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Mes Ferocactus</title>
-    <body onload="prot()" id="ferocactus-background">
+    <body id="ferocactus-background">
     <header>                                                                        <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>
                 <h1 class="title-index-category" class= "top">MES AUTRES FEROCACTUS</h1>

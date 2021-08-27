@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Broméliacées</title>
-<body onload="prot()" id="bromelia-background">
+<body id="bromelia-background">
     <header>                                                                                                <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>
                 <h1 class="title-gallery-category" id="top"> Galerie photo de mes Broméliacées</h1>

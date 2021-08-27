@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Aloe rauhii</title>
-<body onload="prot()" id="repotting-aloe-rauhii">
+<body id="repotting-aloe-rauhii">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Aloe rauhii</h1>

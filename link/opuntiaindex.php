@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Mes Opuntia</title>
-    <body onload="prot()" id="opuntia-background">
+    <body id="opuntia-background">
     <header>                                                                    <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>
                 <h1 class="title-index-category" class= "top">MES AUTRES OPUNTIA</h1>

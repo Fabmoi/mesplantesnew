@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Pilosocereus azureus</title>
-<body onload="prot()" id="repotting-pilosocereus-azureus">
+<body id="repotting-pilosocereus-azureus">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Pilosocereus azureus</h1>

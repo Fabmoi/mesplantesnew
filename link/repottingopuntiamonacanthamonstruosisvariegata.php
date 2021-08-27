@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Opuntia monacantha monstruosis variegata</title>
-<body onload="prot()" id="repotting-opuntiamonacanthamonstruosisvariegata">
+<body id="repotting-opuntiamonacanthamonstruosisvariegata">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Opuntia monacantha monstruosis variegata</h1>

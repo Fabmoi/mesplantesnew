@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Galerie photo de mes Yucca</title>
-<body onload="prot()" id="yucca-background">
+<body id="yucca-background">
  <main>   
 	<header>                                                                                            <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>

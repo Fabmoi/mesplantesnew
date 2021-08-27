@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
     <title>Galerie photo de mes Dracaena</title>
-<body onload="prot()" id="dracaena-background">
+<body id="dracaena-background">
  <main>   
 	<header>                                                                                            <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
             <div>

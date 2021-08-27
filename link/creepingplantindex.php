@@ -1,7 +1,7 @@
 <?php require '../headerindexcategory.php'; ?>
 
 <title>Mes plantes grimpantes</title>
-<body onload="prot()" id="creeping-plant-background">
+<body id="creeping-plant-background">
     <header>                                                                    <!-- TITLE, SUB-TITLE ET ANCRES VERS PLANTES -->
         <div>
             <h1 class="title-index-category" id="top"> MES PLANTES GRIMPANTES</h1>

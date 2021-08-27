@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Euphorbia polyacantha</title>
-<body onload="prot()" id="repotting-euphorbia-polyacantha">                      
+<body id="repotting-euphorbia-polyacantha">                      
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Euphorbia polyacantha</h1>

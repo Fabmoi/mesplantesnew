@@ -1,7 +1,7 @@
 <?php require '../headerrepotting.php'; ?>
 
 <title>Rempotage Corpuscularia lehmannii</title>
-<body onload="prot()" id="repotting-corpuscularia-lehmannii">
+<body id="repotting-corpuscularia-lehmannii">
     <header>                                                                    <!-- TITLE - SUB-TITLE - BOUTONS NAVIGATION -->
         <section class="species-repotting-desc">
             <div><h1 class="title-species-repotting-desc" id="top">Rempotage Corpuscularia lehmannii</h1>
